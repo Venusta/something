@@ -1,8 +1,6 @@
+/* eslint-disable no-console */
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./App";
 
-function Root() {
-  return <h1>Hello, world.</h1>;
-}
-
-ReactDOM.render(<Root />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

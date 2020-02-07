@@ -7,7 +7,7 @@ const Clock = () => {
   const secs = time.getSeconds().toString().padStart(2, "0");
   const mins = time.getMinutes().toString().padStart(2, "0");
   const hours = time.getHours().toString().padStart(2, "0");
-  const day = time.getDay();
+  const dayNumber = time.getDay();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -30,7 +30,7 @@ const Clock = () => {
   ];
 
   // eslint-disable-next-line react/no-array-index-key
-  const daysDisplay = () => days.map((d, index) => <div key={`day-${index}`} className={day - 1 === index ? "day light-on" : "day"}>{d}</div>);
+  const daysDisplay = () => days.map((day, index) => <div key={`day-${index}`} className={dayNumber - 1 === index ? "day light-on" : "day"}>{day}</div>);
 
   return (
     <div className="clock">

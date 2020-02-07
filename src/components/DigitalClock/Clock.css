@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'digital-7';
+  src: url('./digital-7.ttf');
+}
+
+.clock {
+	color: #c777ba;
+	background-color: #141414;
+  font-family: 'digital-7', sans-serif;  
+  text-align: center;
+  padding: 15px;
+  border: solid 5px  #474747;
+  margin: 5px;
+  display:inline-block;
+}
+
+div.days {
+  color:#1f1f1f;
+}
+
+div.days .day { 
+  display: inline-block;
+  margin: 0;
+}
+
+div.days div {  
+  font-size: 12px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+div.display {  
+  margin: 5px 0;
+  display: inline-block;
+  position: relative;
+}
+
+div.display div {
+  font-size: 100px;
+  position: relative;
+  z-index: 100;
+  margin: 0;
+}
+
+div.display .placeholder {
+  color: #1f1f1f;
+  position: absolute;
+  top: 0;
+  z-index: 50;
+}
+
+.light-on { 
+  color: #c777ba; 
+}
